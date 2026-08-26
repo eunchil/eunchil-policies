@@ -8,4 +8,4 @@ Public policy/support pages for Dotline.
 - Account deletion: `/dotline/delete-account/`
 - Support: `/dotline/support/`
 
-The privacy page is a pre-release draft and should be reviewed against the final app behavior, legal requirements, and App Store / Google Play declarations before public release.
+Keep these pages synchronized with the released app behavior and App Store / Google Play declarations whenever data handling or third-party services change.

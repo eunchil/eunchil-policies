@@ -21,9 +21,8 @@
   <body>
     <main>
       <h1>Dotline 개인정보처리방침</h1>
-      <p class="meta">제공자: XURY STUDIO · 최종 업데이트: 2026년 8월 23일 · 시행일: 2026년 8월 23일</p>
+      <p class="meta">제공자: XURY STUDIO · 최종 업데이트: 2026년 8월 26일 · 시행일: 2026년 8월 26일</p>
       <p>Dotline(이하 "Dotline")은 실제로 만난 사람과 장소를 기반으로 관계 지도를 만드는 앱입니다. 이 방침은 Dotline이 처리하는 개인정보와 위치정보, 그리고 사용자의 선택권을 설명합니다.</p>
-      <p class="note"><strong>초안 안내:</strong> 이 페이지는 정식 출시 전 공개용 초안입니다. 최종 개인정보처리방침과 위치 관련 약관은 개인정보·위치정보 전문가 검토 및 실제 출시 기능에 맞춰 갱신될 수 있습니다.</p>
 
       <section>
         <h2>처리하는 정보</h2>
@@ -33,10 +32,12 @@
           <li>프로필 정보: 표시 이름, 사용자 이름, 한 줄 소개, 프로필 및 Dot 사진</li>
           <li>친구 관계, 만남 일자, 만남 횟수, 관계 성장 및 타임라인 정보</li>
           <li>My Dot, 만남 인증 위치, 만남 대표 위치, 지도 해금 영역과 같은 위치 기반 정보</li>
-          <li>기기 안에 저장되는 언어·화면 설정, 지도 설정, foreground Trace(지나온 장소의 개인 흔적)</li>
+          <li>사용자가 현재 위치에서 직접 저장한 장소의 위치, 이름, 메모와 사진</li>
+          <li>기기 안에 저장되는 언어·화면 설정, 지도 설정, Trace(지나온 장소의 개인 흔적)</li>
           <li>서비스 안정성, 보안, 오류 확인을 위한 접속 기록, 오류 코드, 기기 및 앱 버전 정보</li>
           <li>광고 제공 및 동의 관리를 위한 IP 주소, 기기·OS·앱 버전, 광고 요청·노출·오류 정보, 광고 개인정보 선택 상태 등의 기술정보</li>
           <li>기기 안에만 저장되는 광고 빈도 상태: 성공한 저장 횟수, 마지막 광고 표시 시각, 일별 표시 횟수</li>
+          <li>유료 기능 제공과 구매 복원을 위한 상품 식별자, 구매·구독 상태, 만료·갱신·환불 상태 및 Dotline 계정 식별자</li>
         </ul>
       </section>
 
@@ -46,11 +47,12 @@
         <ul>
           <li><strong>현재 위치:</strong> 지도 중심 이동, 현재 위치 표시, My Dot 생성·이동, 만남 인증에 사용됩니다.</li>
           <li><strong>My Dot:</strong> 사용자의 관계 지도의 기준 위치로 사용됩니다. 다른 사용자에게 실시간 현재 위치로 공개되지 않습니다.</li>
-          <li><strong>만남 인증 위치:</strong> 두 사용자가 실제로 가까이 있는지 서버에서 확인하기 위해 일시적으로 사용됩니다. 원시 GPS 좌표는 장기 보관하지 않는 방향으로 설계합니다.</li>
+          <li><strong>만남 인증 위치:</strong> 두 사용자가 실제로 가까이 있는지 서버에서 확인하기 위해 일시적으로 사용됩니다. 실패·취소·만료된 인증용 임시 위치와 세션은 정기적으로 삭제합니다.</li>
           <li><strong>만남 대표 위치:</strong> 인증된 만남 기록, 친구 Dot, 지도 해금 영역을 표시하기 위해 보관될 수 있습니다.</li>
-          <li><strong>Foreground Trace:</strong> 사용자가 지나온 장소를 지도에서 약한 흔적으로 보여주기 위한 정보입니다. 현재 설계상 서버로 전송하지 않고 기기 안에만 저장합니다.</li>
+          <li><strong>저장 장소:</strong> 사용자가 현재 위치에서 직접 만든 장소 기록입니다. 위치, 이름, 메모와 사진은 소유자만 볼 수 있으며 공개 프로필 지도에는 표시하지 않습니다.</li>
+          <li><strong>기기 로컬 Trace:</strong> 사용자가 지나온 장소를 지도에서 개인 흔적으로 보여주기 위한 정보입니다. 사용자가 iOS의 항상 위치 권한과 Trace 기록을 켜면 앱이 화면에 없을 때도 기록될 수 있습니다. 원본 Trace는 서버로 전송하지 않고 해당 기기 안에만 저장합니다.</li>
         </ul>
-        <p>공개 지도 기능이 제공되는 경우, 정확한 좌표를 그대로 공개하지 않고 서버에서 대략화한 위치만 사용하는 방향으로 설계합니다.</p>
+        <p>공개 지도에는 정확한 좌표를 그대로 공개하지 않고 서버에서 대략화한 위치만 표시합니다. Dot은 기본적으로 공개 지도에 표시되지만 사용자는 만남 기록별로 표시를 끌 수 있습니다. 이를 꺼도 본인 지도와 관계 기록은 유지되며, 사진 공개 여부는 별도로 선택합니다.</p>
       </section>
 
       <section>
@@ -62,6 +64,7 @@
           <li>사용자의 공개범위 및 위치 관련 선택 반영</li>
           <li>부정 사용 방지, 오류 확인, 서비스 안정성 개선</li>
           <li>비맞춤형 광고 제공, 광고 빈도 제한, 집계 보고, 부정 광고 트래픽 방지 및 광고 개인정보 선택 관리</li>
+          <li>유료 상품 구매, 구매 복원, 구독 상태 확인과 고객지원</li>
           <li>법령상 의무 이행 및 사용자 문의 대응</li>
         </ul>
       </section>
@@ -80,33 +83,35 @@
 
       <section>
         <h2>외부 서비스와 국외 처리</h2>
-        <p>Dotline은 로그인, 데이터 저장, 지도 표시, 오류 확인 및 광고 제공을 위해 Apple, Google, Supabase, Apple Maps 또는 Google Maps, Expo/EAS 등의 외부 서비스를 사용할 수 있습니다. 각 서비스는 기능 제공, 보안, 오류 진단 또는 광고 운영에 필요한 범위에서 자체 개인정보처리방침에 따라 정보를 처리할 수 있습니다.</p>
+        <p>Dotline은 로그인, 앱 내 결제, 데이터 저장, 지도 표시, 광고 제공과 오류·성능 확인을 위해 Apple, Google, Supabase, RevenueCat, Apple Maps 및 Expo/EAS 등의 외부 서비스를 사용합니다. 각 서비스는 기능 제공, 보안, 오류 진단, 결제 또는 광고 운영에 필요한 범위에서 자체 개인정보처리방침에 따라 정보를 처리할 수 있습니다.</p>
         <p>Google Mobile Ads 및 Google User Messaging Platform을 사용하는 과정에서 광고 관련 기술정보와 개인정보 선택 상태가 Google LLC 및 관련 Google 법인·서비스 제공자가 운영하는 미국 또는 그 밖의 처리 시설로 암호화되어 전송될 수 있습니다. 전송은 동의 상태 확인 또는 광고 요청·표시 시 이루어질 수 있으며, 보관기간은 Google의 정책 및 적용 법령에 따릅니다. 자세한 내용은 <a href="https://policies.google.com/privacy">Google 개인정보처리방침</a>에서 확인할 수 있습니다.</p>
-        <p>외부 서비스 제공자의 법적 지위, 구체적인 국외 이전 국가 및 보관기간 표기는 정식 출시 전 전문가 검토를 거쳐 최종 확정합니다.</p>
+        <p>Dotline은 Apple의 앱 내 결제와 RevenueCat을 이용해 상품 정보, 구매·구독 상태, 만료·갱신·환불 상태를 확인하고 구매 복원 기능을 제공합니다. Dotline과 RevenueCat에는 Dotline 계정 식별자가 연결될 수 있습니다. 카드번호나 결제수단의 전체 정보는 Dotline이 직접 수집하거나 보관하지 않으며 앱 마켓 사업자가 처리합니다.</p>
+        <p>Dotline은 Expo/EAS Observe를 이용해 앱 시작·화면 전환 성능, 앱 버전, 오류 정보와 로그인·프로필 저장·만남 완료 같은 기능 이벤트를 확인합니다. 이 과정에 사용자 이름, 계정 식별자, 정확한 위치, 사진 URL, 개인 메모 또는 인증 토큰을 포함하지 않도록 구성합니다.</p>
       </section>
 
       <section>
         <h2>보관 및 삭제</h2>
         <p>계정, 프로필, 친구 관계, 만남 기록, My Dot, 만남 대표 위치 및 지도 해금 정보는 서비스 제공에 필요한 기간 동안 보관될 수 있습니다. 사용자가 계정 삭제를 요청하면 관계 기록, 위치정보, 기기 로컬 데이터의 처리 범위와 삭제 절차에 따라 삭제 또는 비식별화합니다.</p>
-        <p>만남 인증에 사용되는 원시 GPS 좌표는 장기 기록으로 보관하지 않는 방향으로 설계하며, 실패·취소·만료된 인증 데이터의 보관 및 삭제 방식은 정식 출시 전 확정합니다.</p>
-        <p>기기 안에 저장되는 foreground Trace, 언어·화면 설정, 지도 설정, 광고 빈도 상태 등은 앱 삭제, 기기 설정 초기화, 또는 향후 제공될 앱 내 삭제 기능을 통해 제거될 수 있습니다. Google이 처리하는 광고 관련 정보는 Google의 정책과 사용자의 광고 개인정보 선택에 따라 보관 또는 삭제됩니다.</p>
+        <p>만남 인증에 사용되는 임시 원시 GPS 좌표와 QR·Nearby·인증 세션은 인증 처리 후 또는 만료 시 정기적으로 삭제합니다. 인증된 만남의 대표 위치는 관계 지도 기능을 제공하는 동안 보관될 수 있습니다.</p>
+        <p>기기 안에 저장되는 Trace, 언어·화면 설정, 지도 설정, 광고 빈도 상태 등은 앱 안의 Trace 삭제 기능, 앱 삭제 또는 기기 설정 초기화를 통해 제거할 수 있습니다. Google이 처리하는 광고 관련 정보는 Google의 정책과 사용자의 광고 개인정보 선택에 따라 보관 또는 삭제됩니다.</p>
+        <p>구매 권한 상태는 유료 기능 제공, 구매 복원 및 고객지원에 필요한 기간 동안 보관될 수 있습니다. 중복 처리 방지와 결제 관련 문의 대응을 위한 webhook 운영 기록 및 비식별·집계형 미디어 전송량 기록은 최대 400일 보관 후 자동 정리합니다.</p>
       </section>
 
       <section>
         <h2>사용자의 선택권</h2>
         <ul>
           <li>OS 설정에서 위치 권한을 허용하거나 철회할 수 있습니다.</li>
-          <li>앱 설정에서 공개 지도, 친구 목록 공개 등 공개범위 설정을 변경할 수 있습니다.</li>
+          <li>앱 설정에서 공개 지도, 친구 목록 공개 등 공개범위를 변경하고, 만남 기록별로 Dot의 공개 지도 표시를 끌 수 있습니다.</li>
           <li>적용 지역에서는 앱 설정의 광고 개인정보 옵션에서 광고 관련 동의 또는 판매·공유 거부 선택을 다시 확인하거나 변경할 수 있습니다.</li>
-          <li>향후 앱 안에서 위치 기능 일시중지, Trace 삭제, 계정 삭제 요청 기능을 제공할 예정입니다.</li>
+          <li>앱 설정에서 Trace 기록을 끄거나 이 기기의 Trace를 삭제하고, 계정을 삭제할 수 있습니다.</li>
           <li>개인정보 열람, 정정, 삭제 또는 처리정지 관련 요청은 아래 문의처로 연락할 수 있습니다.</li>
         </ul>
       </section>
 
       <section>
         <h2>아동 및 청소년</h2>
-        <p>Dotline은 만 14세 미만 사용자의 가입을 허용하지 않는 방향으로 설계합니다. 만 14~17세 사용자의 공개 프로필, 공개 지도, 검색 및 발견 기능은 기본적으로 더 제한적으로 제공하는 방향을 검토하고 있습니다.</p>
-        <p>만 14~17세 사용자에게도 광고가 표시될 수 있으나, 비맞춤형 광고만 요청하고 Google의 청소년 취급 설정과 전체이용가(G) 광고 콘텐츠 등급을 적용합니다. 부적절한 광고 범주는 AdMob 차단 설정을 통해 제한합니다. 관련 세부 기준은 정식 출시 전 전문가 검토 후 확정합니다.</p>
+        <p>Dotline은 만 14세 미만 사용자의 가입을 허용하지 않습니다.</p>
+        <p>만 14~17세 사용자에게 광고가 표시되는 경우 비맞춤형 광고만 요청하고, Google의 청소년 취급 설정과 전체이용가(G) 광고 콘텐츠 등급을 적용합니다. 부적절한 광고 범주는 AdMob 차단 설정을 통해 제한합니다.</p>
       </section>
 
       <section>
@@ -122,9 +127,8 @@
 
       <div class="en">
         <h1>Dotline Privacy Policy</h1>
-        <p class="meta">Provider: XURY STUDIO · Last updated: August 23, 2026 · Effective date: August 23, 2026</p>
+        <p class="meta">Provider: XURY STUDIO · Last updated: August 26, 2026 · Effective date: August 26, 2026</p>
         <p>Dotline is an app for building a relationship map from people you meet in person and the places connected to those meetings. This policy explains the information Dotline handles and the choices available to users.</p>
-        <p class="note"><strong>Draft notice:</strong> This is a public pre-release draft. The final policy and location-related terms may be updated after privacy/location expert review and before public release.</p>
 
         <section>
           <h2>Information we handle</h2>
@@ -134,24 +138,27 @@
             <li>Profile information such as display name, username, bio, profile photo, and Dot photos.</li>
             <li>Friend relationships, meeting dates, meeting counts, relationship growth, and timeline information.</li>
             <li>Location-based information such as My Dot, meeting verification location, canonical meeting location, and map unlock areas.</li>
-            <li>Device-local settings and foreground Trace used to show personal exploration on the map.</li>
+            <li>Saved-place location, name, note, and photos you create at your current location.</li>
+            <li>Device-local settings and Trace used to show personal exploration on the map.</li>
             <li>Operational records such as access logs, error codes, device information, and app version for security and reliability.</li>
             <li>Advertising and consent-related technical information such as IP address, device, OS and app version, ad request, impression and error data, and advertising privacy choices.</li>
             <li>Device-local ad frequency state: successful save count, last ad display time, and daily display count.</li>
+            <li>Product identifiers, purchase and subscription status, expiration, renewal, refund status, and your Dotline account id for paid access and restoration.</li>
           </ul>
         </section>
 
         <section>
           <h2>Location use</h2>
-          <p>Dotline separates current location, My Dot, meeting verification location, canonical meeting location, Fog unlock sources, and foreground Trace.</p>
+          <p>Dotline separates current location, My Dot, meeting verification location, canonical meeting location, private saved places, Fog unlock sources, and device-local Trace.</p>
           <ul>
             <li>Current location is used for map centering, current marker, My Dot creation/move, and meeting verification.</li>
             <li>My Dot is a relationship-map anchor and is not shared as a real-time location.</li>
-            <li>Raw GPS used for meeting verification is designed not to be kept as long-term history.</li>
+            <li>Temporary raw GPS and sessions used for failed, cancelled, or expired meeting verification are regularly deleted.</li>
             <li>Canonical meeting locations may be retained for relationship and map features.</li>
-            <li>Foreground Trace is currently designed to stay on the device and not be uploaded to the server.</li>
+            <li>Saved places are private to their owner and are not shown on public profile maps.</li>
+            <li>When Always location access and Trace recording are enabled on iOS, Trace may be recorded while the app is not on screen. Original Trace stays on that device and is not uploaded to the server.</li>
           </ul>
-          <p>If a public map feature is provided, it is intended to use server-side coarse location rather than exposing exact coordinates.</p>
+          <p>The public map uses server-side coarse locations rather than exact coordinates. Dots appear by default, but you can hide an individual Dot from the public map without removing it from your own map or relationship history. Photo visibility is managed separately.</p>
         </section>
 
         <section>
@@ -168,22 +175,24 @@
 
         <section>
           <h2>Purpose, service providers, and international processing</h2>
-          <p>We use information to provide account access, meeting verification, relationship maps, visibility controls, safety, support, service reliability, non-personalized ads, frequency capping, aggregate ad reporting, invalid traffic prevention, and consent management.</p>
-          <p>Dotline may use Apple, Google, Supabase, Apple Maps or Google Maps, and Expo/EAS for login, storage, maps, diagnostics, and advertising. Each provider may process information under its own privacy policy.</p>
+          <p>We use information to provide account access, meeting verification, relationship maps, visibility controls, safety, support, billing, service reliability, non-personalized ads, frequency capping, aggregate ad reporting, invalid traffic prevention, and consent management.</p>
+          <p>Dotline uses Apple, Google, Supabase, RevenueCat, Apple Maps, and Expo/EAS for login, billing, storage, maps, diagnostics, and advertising. Each provider may process information under its own privacy policy.</p>
           <p>When Google Mobile Ads and Google User Messaging Platform are used, advertising-related technical information and privacy choices may be transmitted using encryption to Google LLC, related Google entities, or service providers in the United States and other processing locations. Transfers may occur when consent status is checked or an ad is requested or displayed. Retention follows Google's policies and applicable law. See the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
-          <p>The final legal roles of service providers and the precise countries and retention disclosures for international processing will be confirmed through expert review before public release.</p>
+          <p>Dotline uses Apple in-app purchases and RevenueCat to provide products, verify purchase and subscription status, and restore purchases. A Dotline account identifier may be linked to this processing. Dotline does not directly collect or retain full payment-card details.</p>
+          <p>Dotline uses Expo/EAS Observe for app launch and navigation performance, app version, errors, and feature events such as completed sign-in, profile save, or meeting. It is configured not to include usernames, account ids, exact location, photo URLs, private notes, or authentication tokens.</p>
         </section>
 
         <section>
           <h2>Retention, deletion, and choices</h2>
-          <p>Account, profile, relationship, meeting, My Dot, meeting location, and map unlock data may be retained while needed to provide the service. Raw GPS used for meeting verification is designed not to be retained as long-term history. Device-local Trace, preferences, and ad frequency state can be removed by deleting the app or through future in-app controls. Advertising information processed by Google is retained or deleted under Google's policies and the user's advertising privacy choices.</p>
-          <p>Users can change OS location permissions, app visibility settings, and available advertising privacy choices. Location pause, Trace deletion, and account deletion controls are planned before public release.</p>
+          <p>Account, profile, relationship, meeting, My Dot, meeting location, saved places, and map unlock data may be retained while needed to provide the service. Temporary meeting-verification GPS, QR, Nearby, and session records are regularly removed after use or expiry. Device-local Trace, preferences, and ad frequency state can be removed in the app or by deleting the app. Advertising information processed by Google is retained or deleted under Google's policies and the user's advertising privacy choices.</p>
+          <p>Purchase entitlement state may be retained while needed to provide paid access, restoration, and support. Webhook operations records used for duplicate prevention and billing support, and aggregate media-delivery records, are removed after up to 400 days.</p>
+          <p>Users can change OS location permissions, app visibility settings, and available advertising privacy choices, stop or delete Trace, and delete their account in app settings.</p>
         </section>
 
         <section>
           <h2>Children and teens</h2>
-          <p>Dotline is designed not to allow sign-up by users under 14. For users aged 14-17, more restrictive defaults for public profile, public map, search, and discovery are being reviewed before release.</p>
-          <p>Users aged 14-17 may receive ads, but Dotline requests only non-personalized ads and applies Google's teen treatment setting and a G-rated ad content limit. Inappropriate ad categories are restricted through AdMob blocking controls. Detailed requirements will be finalized through expert review before public release.</p>
+          <p>Users under 14 may not sign up.</p>
+          <p>Users aged 14-17 may receive ads, but Dotline requests only non-personalized ads and applies Google's teen treatment setting and a G-rated ad content limit. Inappropriate ad categories are restricted through AdMob blocking controls.</p>
         </section>
 
         <section>
