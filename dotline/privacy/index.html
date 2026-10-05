@@ -49,7 +49,7 @@
           <li><strong>My Dot:</strong> 사용자의 관계 지도의 기준 위치로 사용됩니다. 다른 사용자에게 실시간 현재 위치로 공개되지 않습니다.</li>
           <li><strong>만남 인증 위치:</strong> 두 사용자가 실제로 가까이 있는지 서버에서 확인하기 위해 일시적으로 사용됩니다. 실패·취소·만료된 인증용 임시 위치와 세션은 정기적으로 삭제합니다.</li>
           <li><strong>만남 대표 위치:</strong> 인증된 만남 기록, 친구 Dot, 지도 해금 영역을 표시하기 위해 보관될 수 있습니다.</li>
-          <li><strong>저장 장소:</strong> 사용자가 현재 위치에서 직접 만든 장소 기록입니다. 위치, 이름, 메모와 사진은 소유자만 볼 수 있으며 공개 프로필 지도에는 표시하지 않습니다.</li>
+          <li><strong>저장 장소:</strong> 사용자가 현재 위치에서 직접 만든 장소 기록입니다. 기본적으로 소유자만 볼 수 있습니다. 사용자가 장소의 공개를 켠 경우에만 이름, 사진, 대략적인 위치가 공개 프로필에 표시되며, 정확한 위치와 메모는 공개되지 않습니다.</li>
           <li><strong>기기 로컬 Trace:</strong> 사용자가 지나온 장소를 지도에서 개인 흔적으로 보여주기 위한 정보입니다. Trace는 앱이 화면에 있는 동안에만 기록되며, 앱이 화면에 없을 때는 위치를 수집하지 않습니다. 원본 Trace는 서버로 전송하지 않고 해당 기기 안에만 저장합니다.</li>
         </ul>
         <p>공개 지도에는 정확한 좌표를 그대로 공개하지 않고 서버에서 대략화한 위치만 표시합니다. Dot은 기본적으로 공개 지도에 표시되지만 사용자는 만남 기록별로 표시를 끌 수 있습니다. 이를 꺼도 본인 지도와 관계 기록은 유지되며, 사진 공개 여부는 별도로 선택합니다.</p>
@@ -149,13 +149,13 @@
 
         <section>
           <h2>Location use</h2>
-          <p>Dotline separates current location, My Dot, meeting verification location, canonical meeting location, private saved places, Fog unlock sources, and device-local Trace.</p>
+          <p>Dotline separates current location, My Dot, meeting verification location, canonical meeting location, saved places, Fog unlock sources, and device-local Trace.</p>
           <ul>
             <li>Current location is used for map centering, current marker, My Dot creation/move, and meeting verification.</li>
             <li>My Dot is a relationship-map anchor and is not shared as a real-time location.</li>
             <li>Temporary raw GPS and sessions used for failed, cancelled, or expired meeting verification are regularly deleted.</li>
             <li>Canonical meeting locations may be retained for relationship and map features.</li>
-            <li>Saved places are private to their owner and are not shown on public profile maps.</li>
+            <li>Saved places are private to their owner by default. Only when the user turns on public visibility for a place are its name, photo, and approximate location shown on the public profile. The exact location and note are never made public.</li>
             <li>Trace is recorded only while the app is on screen. Dotline does not collect location while the app is not on screen. Original Trace stays on that device and is not uploaded to the server.</li>
           </ul>
           <p>The public map uses server-side coarse locations rather than exact coordinates. Dots appear by default, but you can hide an individual Dot from the public map without removing it from your own map or relationship history. Photo visibility is managed separately.</p>
